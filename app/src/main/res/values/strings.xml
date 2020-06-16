@@ -7,14 +7,20 @@
     <string name="action_collection_payment">收付款</string>
 
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="new_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">首页</string>
+    <string name="second_fragment_label">关于我</string>
+    <string name="new_fragment_label">目录页</string>
 
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="newone">新页面</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="new_to_first">跳转到首页</string>
+    <string name="new_to_second">跳转到关于我</string>
+    <string name="first_to_new">跳转到目录页</string>
+    <string name="second_to_new">跳转到目录页</string>
+    <string name="first_to_second">跳转到关于我</string>
+    <string name="second_to_first">跳转到首页</string>
+
+
+    <string name="first_info">首页详情</string>
+    <string name="second_info">关于我</string>
+    <string name="new_info">目录信息</string>
 </resources>

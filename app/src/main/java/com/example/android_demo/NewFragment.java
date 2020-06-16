@@ -23,11 +23,18 @@ public class NewFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.button_new).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.btn_new_to_first).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(NewFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                        .navigate(R.id.action_new_to_first);
+            }
+        });
+        view.findViewById(R.id.btn_new_to_second).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(NewFragment.this)
+                        .navigate(R.id.action_new_to_second);
             }
         });
     }

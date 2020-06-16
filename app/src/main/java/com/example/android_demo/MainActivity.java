@@ -12,6 +12,7 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "您正在操作Snackbar，稍等一会儿，恢复原状", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -45,9 +46,20 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-
+        switch (id) {
+            case R.id.action_start_exchange:
+                Toast.makeText(MainActivity.this,"点击发起群聊",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.action_add_friend:
+                Toast.makeText(MainActivity.this,"点击添加朋友",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.action_scan:
+                Toast.makeText(MainActivity.this,"点击扫一扫",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.action_collection_payment:
+                Toast.makeText(MainActivity.this,"点击收付款",Toast.LENGTH_SHORT).show();
+                break;
+        }
         return super.onOptionsItemSelected(item);
     }
 }
