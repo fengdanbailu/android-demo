@@ -25,4 +25,14 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/NewFragment"
+        android:name="com.example.android_demo.NewFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_new">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/NewFragment" />
+    </fragment>
 </navigation>
